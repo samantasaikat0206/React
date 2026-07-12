@@ -3,6 +3,13 @@ import ClassBasedComponent from './components/ClassBasedComponent'
 import FunctionBasedComponent from './components/FunctionBasedComponent'
 import ProductList from './components/products'
 
+const dummyProducts = [
+  "Product 1",
+  "Product 2",
+  "Product 3",
+  "Product 4",
+  "Product 5"
+]
 const App = () => {
   return (
     <div>
@@ -11,7 +18,7 @@ const App = () => {
       <FunctionBasedComponent/>
        */}
 
-       <ProductList/>
+       <ProductList name="saikat" city="New York" products={dummyProducts}/>
     </div>
   )
 }

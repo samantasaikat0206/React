@@ -1,18 +1,21 @@
 import React from 'react'
 import ProductItems from './components/ProductItems'
 
-const dummyProducts = [
-  "Product 1",
-  "Product 2",
-  "Product 3",
-  "Product 4",
-  "Product 5"
-]
-const ProductList = () => {
+
+const ProductList = ({ name, city, products }) => {
   return (
     <div>
       <h3>Product List</h3>
-      <ProductItems/>
+      <p>Name: {name}</p>
+      <p>City: {city}</p>
+      {/* <ProductItems/> */}
+      <ul>
+        {
+          products.map((product, index) => (
+            <ProductItems key={index} product={product} />
+          ))
+        }
+      </ul>
     </div>
   )
 }

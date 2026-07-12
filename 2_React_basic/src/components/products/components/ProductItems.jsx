@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ProductItems = () => {
+const ProductItems = ({ key, product }) => {
   return (
-    <div>
-      
+    <div key={key}>
+      <p>{product}</p>
     </div>
   )
 }
