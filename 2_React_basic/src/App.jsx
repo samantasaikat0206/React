@@ -14,13 +14,13 @@ const dummyProducts = [
 const App = () => {
   return (
     <div>
-      <Rendertext flag={true} />
+      {/* <Rendertext flag={true} /> */}
       <h1>My React App</h1>
-      {/* <ClassBasedComponent/>
-      <FunctionBasedComponent/>
-       */}
+      <ClassBasedComponent/>
+      {/* <FunctionBasedComponent/> */}
+      
 
-       <ProductList name="saikat" city="New York" products={dummyProducts}/>
+       {/* <ProductList name="saikat" city="New York" products={dummyProducts}/> */}
     </div>
   )
 }
