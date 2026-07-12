@@ -29,3 +29,32 @@
 <button className={styles.buttonStyle}>Buy</button>
 ```
 
+## How to render conditional statements
+
+> we can render conditional statement using three way
+1. like example
+ ```jsx 
+    const flag = true;
+    {
+        flag ? (
+          <h4>Welcome, {name}!</h4>
+        ) : (
+          <h4>Welcome, Guest!</h4>
+        )
+      }
+ ```
+
+ 2. as using component like make a  "`Rendertext.jsx`" 
+
+ 3. like below and use this textRender like {textRender}
+ ```jsx
+    const flag = true;
+
+    const textRender = flag ? (
+        <h4>flag is true</h4>
+    ): (
+        <h4>flag is false</h4>
+    )
+ ``` 
+
+ 

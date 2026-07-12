@@ -2,6 +2,7 @@ import React from 'react'
 import ClassBasedComponent from './components/ClassBasedComponent'
 import FunctionBasedComponent from './components/FunctionBasedComponent'
 import ProductList from './components/products'
+import Rendertext from './components/Rendertext'
 
 const dummyProducts = [
   "Product 1",
@@ -13,6 +14,7 @@ const dummyProducts = [
 const App = () => {
   return (
     <div>
+      <Rendertext flag={true} />
       <h1>My React App</h1>
       {/* <ClassBasedComponent/>
       <FunctionBasedComponent/>
